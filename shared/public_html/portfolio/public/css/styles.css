@@ -10831,7 +10831,7 @@ html {
 }
 
 .page-section {
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 .page-section .page-section-heading {
     font-size: 2.25rem;
@@ -10968,7 +10968,7 @@ html {
 }
 
 .masthead {
-    padding-top: calc(6rem + 74px);
+    padding-top: calc(2rem + 74px);
     padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
@@ -10984,7 +10984,7 @@ html {
 
 @media (min-width: 992px) {
     .masthead {
-        padding-top: calc(6rem + 104px);
+        padding-top: calc(2rem + 104px);
         padding-bottom: 6rem;
     }
     .masthead .masthead-heading {
@@ -10994,6 +10994,10 @@ html {
     .masthead .masthead-subheading {
         font-size: 1.5rem;
     }
+}
+
+.portfolio{
+    padding-top: 9rem;
 }
 .portfolio .portfolio-item {
     cursor: pointer;
@@ -11043,4 +11047,14 @@ html {
 
 .copyright {
     background-color: #1a252f;
+}
+
+.gold-star {
+    color: #FFD700; /* Couleur dorée */
+}
+
+.skill-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* Cette propriété garantit que l'image sera contenue dans la boîte tout en conservant son ratio */
 }
