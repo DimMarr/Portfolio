@@ -25,7 +25,10 @@
                 <!-- Texte de présentation -->
                 <div class="col-lg-8 me-auto">
                     <p class="lead">
-                        Je suis Dimitri Martel, j'ai 19 ans et voici mon portfolio.
+                        {% set currentYear = "now"|date('Y') %}
+                        {% set birthYear = 2005 %}
+                        {% set age = currentYear - birthYear %}
+                        Je suis Dimitri Martel, j'ai {{ age }} ans et voici mon portfolio.
                         Actuellement en 3ème année de BUT informatique à l'IUT de Montpellier/Sète, je me spécialise dans la filière
                         RACDV. Depuis septembre 2024, je suis en alternance à INRAE LBE à Narbonne où je travaille sur des projets
                         de développements web et sur l'optimisation des systèmes informatiques pour les bioprocédés.
