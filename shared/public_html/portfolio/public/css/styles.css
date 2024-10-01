@@ -11058,3 +11058,28 @@ html {
     height: 100px;
     object-fit: contain; /* Cette propriété garantit que l'image sera contenue dans la boîte tout en conservant son ratio */
 }
+
+.portfolio-label {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    z-index: 10;
+    color: white;
+}
+
+.badge.bg-info {
+    background-color: #17a2b8; /* Couleur pour les projets perso */
+}
+
+.badge.bg-warning {
+    background-color: #ffc107; /* Couleur pour les projets étudiants */
+}
+
+/* Assurez-vous que l'élément parent a position: relative */
+.portfolio-item {
+    position: relative;
+}
