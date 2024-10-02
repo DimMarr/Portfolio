@@ -74,11 +74,6 @@ function play() {
     requestAnimationFrame(step);
 }
 
-// Pause la simulation
-function pause() {
-    isPlaying = false;
-}
-
 // Compter les voisins vivants
 function countAliveNeighbors(row, col) {
     let count = 0;
@@ -109,7 +104,11 @@ function updateGrid(newGrid, cellsToUpdate) {
     });
 }
 
-// Réinitialiser la grille
+// Pause la simulation
+function pause() {
+    isPlaying = false;
+}
+
 function init() {
     isPlaying = false;
     grid = {};
