@@ -17,6 +17,13 @@ function createGrid(rows, cols) {
             cell.dataset.row = row;
             cell.dataset.col = col;
             cell.addEventListener('click', () => toggleCell(cell));
+
+            // Si la souris est enfoncée, dessiner
+            cell.addEventListener('mouseover', e => {
+                if (e.buttons === 1) {
+                    toggleCell(cell);
+                }
+            });
             fragment.appendChild(cell);
             grid[`${row},${col}`] = false; // Cellule morte par défaut
         }
