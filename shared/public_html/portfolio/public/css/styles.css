@@ -11083,3 +11083,7 @@ html {
 .portfolio-item {
     position: relative;
 }
+
+.tech-image {
+    height: 100px; /* Définir la hauteur souhaitée */
+}

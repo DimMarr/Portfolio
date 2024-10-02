@@ -110,7 +110,7 @@ function updateGrid(newGrid) {
 }
 
 // Réinitialiser la grille
-function reset() {
+function init() {
     isPlaying = false;
     grid = {};
     createGrid(100, 150); // Ajuster la taille de la grille ici
@@ -119,7 +119,7 @@ function reset() {
 // Événements
 playButton.addEventListener('click', play);
 pauseButton.addEventListener('click', pause);
-resetButton.addEventListener('click', reset);
+resetButton.addEventListener('click', init);
 
 // Initialiser la grille
-createGrid(100, 150);
+init();
