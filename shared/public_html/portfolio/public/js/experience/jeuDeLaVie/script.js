@@ -2,9 +2,12 @@ const gridElement = document.getElementById('grid');
 const playButton = document.getElementById('play');
 const pauseButton = document.getElementById('pause');
 const resetButton = document.getElementById('reset');
+const speedSlider = document.getElementById('speed');
+const speedValueDisplay = document.getElementById('speedValue');
 
 let grid = {};
 let isPlaying = false;
+let simulationSpeed = parseInt(speedSlider.value);
 
 // Création de la grille
 function createGrid(rows, cols) {
@@ -46,6 +49,7 @@ function play() {
 
     function step() {
         const newGrid = { ...grid };
+        const cellsToUpdate = []; // Tableau pour stocker les cellules à mettre à jour
 
         for (const key in grid) {
             const [row, col] = key.split(',').map(Number);
@@ -53,14 +57,18 @@ function play() {
 
             if (grid[key] && (aliveNeighbors < 2 || aliveNeighbors > 3)) {
                 newGrid[key] = false; // Meurt
+                cellsToUpdate.push(key); // Ajoute la cellule à la liste des mises à jour
             } else if (!grid[key] && aliveNeighbors === 3) {
                 newGrid[key] = true; // Naît
+                cellsToUpdate.push(key); // Ajoute la cellule à la liste des mises à jour
             }
         }
 
-        updateGrid(newGrid);
+        updateGrid(newGrid, cellsToUpdate); // Met à jour seulement les cellules concernées
 
-        if (isPlaying) requestAnimationFrame(step); // Continue l'animation si "Play" est actif
+        if (isPlaying) {
+            setTimeout(() => requestAnimationFrame(step), simulationSpeed); // Utilise la vitesse du slider
+        }
     }
 
     requestAnimationFrame(step);
@@ -84,29 +92,21 @@ function countAliveNeighbors(row, col) {
     return count;
 }
 
-// Mettre à jour la grille
-function updateGrid(newGrid) {
-    grid = newGrid;
-    const fragment = document.createDocumentFragment();
+// Mettre à jour uniquement les cellules concernées
+function updateGrid(newGrid, cellsToUpdate) {
+    grid = newGrid; // Met à jour l'état de la grille
 
-    Object.keys(grid).forEach(key => {
+    cellsToUpdate.forEach(key => {
         const [row, col] = key.split(',').map(Number);
         const cell = document.querySelector(`[data-row="${row}"][data-col="${col}"]`);
 
+        // Mise à jour de l'état de la cellule
         if (grid[key]) {
-            if (!cell.classList.contains('alive')) {
-                cell.classList.add('alive');
-            }
+            cell.classList.add('alive');
         } else {
-            if (cell.classList.contains('alive')) {
-                cell.classList.remove('alive');
-            }
+            cell.classList.remove('alive');
         }
-
-        fragment.appendChild(cell);
     });
-
-    gridElement.appendChild(fragment);
 }
 
 // Réinitialiser la grille
@@ -120,6 +120,10 @@ function init() {
 playButton.addEventListener('click', play);
 pauseButton.addEventListener('click', pause);
 resetButton.addEventListener('click', init);
+speedSlider.addEventListener('input', () => {
+    simulationSpeed = parseInt(speedSlider.value);
+    speedValueDisplay.textContent = `${simulationSpeed} ms`;
+});
 
 // Initialiser la grille
 init();

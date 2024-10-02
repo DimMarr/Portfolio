@@ -12,6 +12,11 @@
         <button id="play" class="btn btn-success mx-2">Play</button>
         <button id="pause" class="btn btn-warning mx-2">Pause</button>
         <button id="reset" class="btn btn-danger mx-2">Reset</button>
+        <div>
+            <label for="speed">Vitesse de la simulation :</label>
+            <input type="range" id="speed" min="25" max="1000" value="500" step="25">
+            <span id="speedValue">500 ms</span>
+        </div>
     </div>
     <div id="grid-wrapper">
         <div id="grid"></div>
