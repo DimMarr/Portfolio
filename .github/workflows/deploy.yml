@@ -3,7 +3,7 @@ name: Deploy portfolio via FTP
 on:
   push:
     branches:
-      - main
+      - main  # Branche principale, à ajuster selon ton besoin
 
 jobs:
   ftp-deploy:
@@ -21,13 +21,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./shared/public_html/portfolio/
           server-dir: /portfolio/
-
-      - name: Execute Composer Install on Server via SSH
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
-          script: |
-            cd /home/lelu9105/dimitri-martel.fr/portfolio/  && composer install --no-dev
