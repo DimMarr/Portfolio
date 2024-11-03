@@ -1,7 +1,9 @@
 const skills = [
     { name: "PHP", logo: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg", stars: 4 },
-    { name: "Symfony", logo: "https://img.icons8.com/?size=512&id=78295&format=png", stars: 3 },
+    { name: "Symfony/WepApp", logo: "https://img.icons8.com/?size=512&id=78295&format=png", stars: 3 },
+    { name: "Symfony/API-REST", logo: "https://img.icons8.com/?size=512&id=78295&format=png", stars: 3 },
     { name: "JavaScript", logo: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg", stars: 4 },
+    { name: "Vue.JS", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png", stars: 2 },
     { name: "SQL", logo: "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png", stars: 5 },
     { name: "Docker", logo: "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png", stars: 5 },
     { name: "C", logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png", stars: 3 },
@@ -12,11 +14,11 @@ const skills = [
 ];
 
 const tools = [
-    { name: "Suite JetBrains", logo: "https://seeklogo.com/images/J/jetbrains-logo-CFBA1D6854-seeklogo.com.png", stars: 4 },
+    { name: "Suite JetBrains (PhpStorm, PyCharm, ...)", logo: "https://seeklogo.com/images/J/jetbrains-logo-CFBA1D6854-seeklogo.com.png", stars: 4 },
     { name: "Visual Studio Code", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png", stars: 3 },
     { name: "Trello", logo: "https://www.vectorlogo.zone/logos/trello/trello-tile.svg", stars: 3 },
-    { name: "GitLab", logo: "https://cdn.worldvectorlogo.com/logos/gitlab.svg", stars: 5 },
-    { name: "GitHub", logo: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg", stars: 4 },
+    { name: "GitLab", logo: "https://cdn.worldvectorlogo.com/logos/gitlab.svg", stars: 4 },
+    { name: "GitHub", logo: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg", stars: 3 },
 ];
 
 // Fonction pour générer les cartes HTML
