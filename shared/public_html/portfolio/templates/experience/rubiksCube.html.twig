@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Experience | Rubik's Cube{% endblock %}
+
+{% block body %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    <style>
+        canvas {
+            display: block;
+            margin: 150px auto;
+            background-color: #f0f0f0;
+        }
+    </style>
+    <canvas id="glCanvas" width="640" height="480"></canvas>
+    <script src="{{ asset('js/experience/rubiksCube/script.js') }}"></script>
+{% endblock %}

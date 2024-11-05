@@ -25,4 +25,10 @@ class MainController extends AbstractController
     {
         return $this->render('experience/jeuDeLaVie.html.twig');
     }
+
+    #[Route('/experience/rubiksCube', name: 'rubiksCube')]
+    public function rubiksCube(): Response
+    {
+        return $this->render('experience/rubiksCube.html.twig');
+    }
 }
