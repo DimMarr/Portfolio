@@ -1,16 +1,18 @@
 const skills = [
+    { name: "Docker", logo: "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png", stars: 5 },
+    { name: " Gitlab CI/CD", logo: "https://about.gitlab.com/images/icons/ci-cd-logo.svg", stars: 4 },
+    { name: "Bash", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/768px-Bash_Logo_Colored.svg.png?20180723054350", stars: 4 },
     { name: "PHP", logo: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg", stars: 4 },
     { name: "Symfony/WepApp", logo: "https://img.icons8.com/?size=512&id=78295&format=png", stars: 3 },
     { name: "Symfony/API-REST", logo: "https://img.icons8.com/?size=512&id=78295&format=png", stars: 3 },
     { name: "JavaScript", logo: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg", stars: 4 },
     { name: "Vue.JS", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png", stars: 2 },
-    { name: "SQL", logo: "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png", stars: 5 },
-    { name: "Docker", logo: "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png", stars: 5 },
+    { name: "SQL Databases", logo: "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png", stars: 5 },
+    { name: "MongoDB", logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg", stars: 3 },
+    { name: "Cassandra", logo: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg", stars: 3 },
     { name: "C", logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png", stars: 3 },
     { name: "Java", logo: "https://upload.wikimedia.org/wikipedia/fr/2/2e/Java_Logo.svg", stars: 4 },
     { name: "Python", logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg", stars: 3 },
-    { name: "CI/CD", logo: "https://about.gitlab.com/images/icons/ci-cd-logo.svg", stars: 4 },
-    { name: "Bash", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/768px-Bash_Logo_Colored.svg.png?20180723054350", stars: 4 },
 ];
 
 const tools = [

@@ -20,25 +20,24 @@
             <div class="row">
                 <!-- Photo personnelle -->
                 <div class="col-lg-4 ms-auto text-center">
-                    <img src="{{ asset('assets/img/photo_perso.jpg') }}" style="height: 250px" class="rounded-circle img-fluid" alt="Photo personnelle de Dimitri Martel">
+                    <img src="{{ asset('assets/img/photo_perso.jpg') }}" style="height: 250px" class="rounded-circle img-fluid" alt="Dimitri Martel">
                 </div>
                 <!-- Texte de présentation -->
                 <div class="col-lg-8 me-auto">
-                    <p class="lead">
-                        {% set currentYear = "now"|date('Y') %}
-                        {% set birthYear = 2005 %}
-                        {% set age = currentYear - birthYear %}
-                        Je suis Dimitri Martel, j'ai {{ age }} ans et voici mon portfolio.
-                        Actuellement en 3ème année de BUT informatique à l'IUT de Montpellier/Sète, je me spécialise dans la filière
-                        RACDV. Depuis septembre 2024, je suis en alternance à INRAE LBE à Narbonne où je travaille sur des projets
-                        de développements web et sur l'optimisation des systèmes informatiques pour les bioprocédés.
+                    <p style="text-align : justify;" class="lead">
+                        Actuellement en 3ème année de BUT informatique à l'<a href="https://iut-montpellier-sete.edu.umontpellier.fr/" target="_blank">IUT de Montpellier/Sète</a>,
+                        je me spécialise dans la filière RACDV.
+                        Depuis septembre 2024, je suis en alternance au laboratoire de recherche <a href="https://narbonne.montpellier.hub.inrae.fr/" target="_blank">INRAE LBE</a>
+                        à Narbonne où je travaille sur différents systèmes d'informations pour la gestion des bio-procédés.
                     </p>
-                    <p class="lead">
-                        En parallèle de mes études, je me consacre au développement web, avec une expertise en développement Symfony,
-                        et la manipulation des outils DevOps (docker, kubernetes, Ansible, CI/CD, etc).
-                        Mon objectif est de d'apporter des solutions innovantes et performantes aux entreprises grâce à l'automatisation des processus,
-                        la sécurité et la fiabilité des infrastructures.
+                    <p style="text-align : justify;" class="lead">
+                        Mon objectif est d'intégrer prochainement une école d'ingénieur afin d'approfondir
+                        mes compétences techniques et développer une expertise dans des domaines comme le DevOps,
+                        la gestion de l'infrastructure à grande échelle, ainsi que l'automatisation des processus de développement et de déploiement.
+                        Je suis convaincu que cette formation me permettra d'acquérir des connaissances avancées dans
+                        des technologies de pointe et de participer à des projets innovants.
                     </p>
+
                 </div>
             </div>
 
