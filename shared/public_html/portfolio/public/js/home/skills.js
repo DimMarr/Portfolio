@@ -1,5 +1,5 @@
 const skills = [
-    { name: "Docker", logo: "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png", stars: 5 },
+    { name: "Docker", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJl4fp0SkQbTPU5ZxVl6AKWYuKCwM0gIhNtQ&s", stars: 5 },
     { name: " Gitlab CI/CD", logo: "https://about.gitlab.com/images/icons/ci-cd-logo.svg", stars: 4 },
     { name: "Bash", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/768px-Bash_Logo_Colored.svg.png?20180723054350", stars: 4 },
     { name: "PHP", logo: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg", stars: 4 },
