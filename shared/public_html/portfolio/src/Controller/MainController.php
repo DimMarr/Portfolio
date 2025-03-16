@@ -20,6 +20,12 @@ class MainController extends AbstractController
         return $this->render('projets/projets.html.twig');
     }
 
+    #[Route('/portfolioApprentissage', name: 'portfolioApprentissage')]
+    public function portfolioApprentissage(): Response
+    {
+        return $this->render('but/portfolioApprentissage.html.twig');
+    }
+
     #[Route('/experience/jeuDeLaVie', name: 'jeuDeLaVie')]
     public function jeuDeLaVie(): Response
     {
